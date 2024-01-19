@@ -20,18 +20,22 @@ SRC_DIR	=	src/
 
 ARRAY_DIR =		array/
 CTYPE_DIR =		ctype/
+GNL_DIR =		gnl/
 LIST_DIR =		list/
 MATH_DIR =		math/
+PRINTF_DIR =	ft_printf/
 STDIO_DIR =		stdio/
 STDLIB_DIR =	stdlib/
 STRING_DIR =	string/
 STRMTRX_DIR =	strsmatrix/
 
 BIN_DIRS	=	$(addprefix $(BIN_DIR), $(ARRAY_DIR))		\
-				$(addprefix $(BIN_DIR), $(STRMTRX_DIR))	\
+				$(addprefix $(BIN_DIR), $(STRMTRX_DIR))		\
 				$(addprefix $(BIN_DIR), $(CTYPE_DIR))		\
+				$(addprefix $(BIN_DIR), $(GNL_DIR))			\
 				$(addprefix $(BIN_DIR), $(LIST_DIR))		\
 				$(addprefix $(BIN_DIR), $(MATH_DIR))		\
+				$(addprefix $(BIN_DIR), $(PRINTF_DIR))		\
 				$(addprefix $(BIN_DIR), $(STDIO_DIR))		\
 				$(addprefix $(BIN_DIR), $(STDLIB_DIR))		\
 				$(addprefix $(BIN_DIR), $(STRING_DIR))		\
@@ -53,7 +57,10 @@ CTYPE_FILES	=	ft_isalnum	\
 				ft_isspace	\
 				ft_isupper	\
 				ft_tolower	\
-				ft_toupper	
+				ft_toupper
+
+GNL_FILES =		get_next_line_utils	\
+				get_next_line
 
 LIST_FILES =	ft_lstadd_back_bonus	\
 				ft_lstadd_front_bonus	\
@@ -75,14 +82,23 @@ MATH_FILES =	ft_maxmin	\
 				ft_pow		\
 				ft_abs
 
-STDIO_FILES =	ft_putchar_fd	\
-				ft_putendl_fd	\
-				ft_putnbr_fd	\
-				ft_putnbrlen_fd	\
-				ft_putnbrlen_hex \
-				ft_putstr_fd	\
-				ft_putstrlen_fd	\
+STDIO_FILES =	ft_putchar_fd		\
+				ft_putendl_fd		\
+				ft_putnbr_fd		\
+				ft_putnbrlen_fd		\
+				ft_putnbrlen_hex	\
+				ft_putstr_fd		\
+				ft_putstrlen_fd		\
 				ft_putnbr_base
+
+PRINTF_FILES =	ft_char		\
+				ft_hexa		\
+				ft_numb		\
+				ft_pointer	\
+				ft_printf	\
+				ft_str		\
+				ft_unsigned	\
+				utils
 
 STDLIB_FILES =	frees 		\
 				ft_calloc	\
@@ -133,8 +149,10 @@ STRSMTRX_FILES =	ft_strs_add_line	\
 
 FILES	=	$(addprefix $(CTYPE_DIR), $(CTYPE_FILES))		\
 			$(addprefix $(ARRAY_DIR), $(ARRAY_FILES))		\
+			$(addprefix $(GNL_DIR), $(GNL_FILES))			\
 			$(addprefix $(LIST_DIR), $(LIST_FILES))			\
 			$(addprefix $(MATH_DIR), $(MATH_FILES))			\
+			$(addprefix $(PRINTF_DIR), $(PRINTF_FILES))		\
 			$(addprefix $(STDIO_DIR), $(STDIO_FILES))		\
 			$(addprefix $(STDLIB_DIR), $(STDLIB_FILES))		\
 			$(addprefix $(STRING_DIR), $(STRING_FILES))		\
@@ -165,23 +183,19 @@ all: $(NAME)
 
 $(NAME): $(OBJS)
 	@$(AR) $(NAME) $(OBJS)
-	@echo "\n$(G)Library compiled!$(DEF_COLOR)-> $@\n"
+	@echo "\n$(G)[LIBFT] Library compiled!$(DEF_COLOR)-> $@\n"
 
 $(BIN_DIR)%.o:$(SRC_DIR)%.c
 	@mkdir -p $(BIN_DIRS)
 	@echo "$(Y)Compiling: $< $(DEF_COLOR)"
 	@$(CC) $(CFLAGS) -I$(HDR_DIR) -c $< -o $@
-	
-bonus: $(OBJS) $(BOBJS)
-	@$(AR) $(NAME) $(OBJS) $(BOBJS)
-	@echo "\n$(G)Library with bonus compiled!$(DEF_COLOR)-> $(NAME)\n"
 
 clean:
 	@$(RM) $(OBJS) $(BOBJS)
-	@echo "$(R)All .o files removed$(DEF_COLOR)\n"
+	@echo "$(R)[LIBFT] All .o files removed$(DEF_COLOR)"
 
 fclean: clean
 	@$(RM) $(NAME)
-	@echo "$(R)Library .a file removed$(DEF_COLOR)\n"
+	@echo "$(R)[LIBFT] Library .a file removed$(DEF_COLOR)"
 
 re: fclean all
