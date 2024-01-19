@@ -6,11 +6,11 @@
 /*   By: jcodina- <jcodina-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/18 16:09:36 by jcodina-          #+#    #+#             */
-/*   Updated: 2024/01/12 17:51:38 by jcodina-         ###   ########.fr       */
+/*   Updated: 2024/01/19 18:41:15 by jcodina-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "../../include/libft.h"
 /**
  * Adds given new node to the back of given list lst.
  * @param lst Pointer to first node in list where to add the new node.

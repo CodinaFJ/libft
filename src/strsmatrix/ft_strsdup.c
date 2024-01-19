@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strsdup.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jcodina- <fjavier.codina@gmail.com>        +#+  +:+       +#+        */
+/*   By: jcodina- <jcodina-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/31 14:51:33 by jcodina-          #+#    #+#             */
-/*   Updated: 2023/12/31 14:51:33 by jcodina-         ###   ########.fr       */
+/*   Updated: 2024/01/19 18:41:15 by jcodina-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "../../include/libft.h"
 
 /**
  * Returns an allocated duplicate of the NULL termianted matrix of strings strs

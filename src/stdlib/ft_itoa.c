@@ -6,11 +6,11 @@
 /*   By: jcodina- <jcodina-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/17 19:37:18 by jcodina-          #+#    #+#             */
-/*   Updated: 2024/01/03 09:01:23 by jcodina-         ###   ########.fr       */
+/*   Updated: 2024/01/19 18:41:15 by jcodina-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "../../include/libft.h"
 
 static int	calc_len(int nbr)
 {

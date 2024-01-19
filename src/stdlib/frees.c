@@ -6,11 +6,11 @@
 /*   By: jcodina- <jcodina-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/16 20:22:16 by jcodina-          #+#    #+#             */
-/*   Updated: 2023/01/26 15:23:24 by jcodina-         ###   ########.fr       */
+/*   Updated: 2024/01/19 18:41:15 by jcodina-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "../../include/libft.h"
 /**
  * Used to protect double pointer array p form allocation error.
  * Liberates n arrays in p and p.

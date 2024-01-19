@@ -6,11 +6,11 @@
 /*   By: jcodina- <jcodina-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/31 15:23:05 by jcodina-          #+#    #+#             */
-/*   Updated: 2024/01/12 17:51:30 by jcodina-         ###   ########.fr       */
+/*   Updated: 2024/01/19 18:41:15 by jcodina-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "../../include/libft.h"
 
 /**
  * Removes all nodes in list that makes the (*compare)(void *, void *)

@@ -6,11 +6,11 @@
 /*   By: jcodina- <jcodina-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/31 13:39:34 by jcodina-          #+#    #+#             */
-/*   Updated: 2024/01/12 17:56:32 by jcodina-         ###   ########.fr       */
+/*   Updated: 2024/01/19 18:41:15 by jcodina-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/libft.h"
+#include "../../include/libft.h"
 
 /**
  * Duplicates str and apends it to the NULL terminated matrix of strings strs.

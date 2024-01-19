@@ -6,13 +6,13 @@
 /*   By: jcodina- <jcodina-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/03 10:28:20 by marubio-          #+#    #+#             */
-/*   Updated: 2024/01/19 17:32:25 by jcodina-         ###   ########.fr       */
+/*   Updated: 2024/01/19 18:41:15 by jcodina-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*								By: marubio-								*/
 
-#include "../../includes/ft_printf.h"
+#include "../../include/ft_printf.h"
 
 int	data_type(const char *type, int i, va_list ap)
 {

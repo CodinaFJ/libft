@@ -6,13 +6,13 @@
 /*   By: jcodina- <jcodina-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/09 11:42:31 by marubio-          #+#    #+#             */
-/*   Updated: 2024/01/19 17:24:40 by jcodina-         ###   ########.fr       */
+/*   Updated: 2024/01/19 18:41:15 by jcodina-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*								By: marubio-								*/
 
-#include "../../includes/get_next_line.h"
+#include "../../include/get_next_line.h"
 
 /**
  * It takes two strings and joins them together.

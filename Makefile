@@ -14,7 +14,7 @@ RM = rm -rf
 Directories
 ########################################################################################
 
-HDR_DIR	=	includes/
+HDR_DIR	=	include/
 BIN_DIR =	bin/
 SRC_DIR	=	src/
 
