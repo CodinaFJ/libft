@@ -6,6 +6,6 @@ The aim of this project is to code a C library regrouping usual functions that y
  <br>
 
 ## Contributors
-[marubio](https://github.com/marinarrubio): Add whole get_next_line and ft_printf
+[marubio](https://github.com/marinarrubio): Add whole get_next_line and ft_printf </br>
 <a href="es.subject.libft.pdf">Subject</a>
 </p>
