@@ -144,6 +144,7 @@ STRSMTRX_FILES =	ft_strs_add_line	\
 					ft_strschr			\
 					ft_strscpy			\
 					ft_strs_free		\
+					ft_strs_print		\
 					ft_strsdup
 
 

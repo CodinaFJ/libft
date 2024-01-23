@@ -6,7 +6,7 @@
 /*   By: jcodina- <jcodina-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/10 16:11:23 by jcodina-          #+#    #+#             */
-/*   Updated: 2024/01/19 17:31:47 by jcodina-         ###   ########.fr       */
+/*   Updated: 2024/01/23 19:56:10 by jcodina-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -159,5 +159,6 @@ char			*ft_strs_add_line(const char *str, char **strs);
 void			ft_strs_clear(char **strs);
 void			ft_strs_free(char **strs);
 char			**ft_strsdup(const char **strs);
+void			ft_strs_print(const char **strs);
 
 #endif
