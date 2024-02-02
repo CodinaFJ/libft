@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jcodina- <jcodina-@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: jcodina- <fjavier.codina@gmail.com>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/10 16:11:23 by jcodina-          #+#    #+#             */
-/*   Updated: 2024/01/23 19:56:10 by jcodina-         ###   ########.fr       */
+/*   Updated: 2024/02/02 09:53:19by jcodina-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,15 @@ enum e_capital_letters
 	LOW = 0,
 	HIGH = 1
 };
+
+#ifndef _E_BOOL
+# define _E_BOOL
+	typedef enum e_bool
+	{
+		false = 0,
+		true = 1
+	}	t_bool;
+#endif // !_E_BOOL
 
 /* ************************************************************************** */
 /*   Functions															      */

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jcodina- <jcodina-@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: jcodina- <fjavier.codina@gmail.com>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/09 11:42:42 by marubio-          #+#    #+#             */
-/*   Updated: 2024/01/19 17:25:39 by jcodina-         ###   ########.fr       */
+/*   Updated: 2024/02/02 10:17:18 by jcodina-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <sys/types.h>
+# include <stdio.h>
 # include <sys/uio.h> 
 # include <stdlib.h>
 # include <fcntl.h>
