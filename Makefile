@@ -134,6 +134,7 @@ STRING_FILES =	ft_memcmp	\
 				ft_striteri	\
 				ft_strlen 	\
 				ft_strmapi 	\
+				ft_str_contains
 
 STRSMTRX_FILES =	ft_strs_add_line	\
 					ft_strs_cols		\
