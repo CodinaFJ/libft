@@ -45,6 +45,16 @@ enum e_capital_letters
 	}	t_bool;
 #endif // !_E_BOOL
 
+# ifndef TYPE_RC
+#  define TYPE_RC
+typedef enum e_rc
+{
+	RC_OK,
+	RC_NULLPTR,
+	RC_NOK
+}	t_rc;
+# endif
+
 /* ************************************************************************** */
 /*   Functions															      */
 /* ************************************************************************** */
