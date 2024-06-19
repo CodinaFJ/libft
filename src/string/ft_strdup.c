@@ -6,7 +6,7 @@
 /*   By: jcodina- <fjavier.codina@gmail.com>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/10 16:09:46 by jcodina-          #+#    #+#             */
-/*   Updated: 2024/06/18 22:21:59 by jcodina-         ###   ########.fr       */
+/*   Updated: 2024/06/19 20:04:57 by jcodina-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,16 +20,21 @@
 char	*ft_strdup(const char *s)
 {
 	char	*dup;
+	size_t	len;
 
-	if (ft_strlen(s) == 0)
-		return (NULL);
-	dup = (char *)malloc((ft_strlen(s) + 1) * sizeof(char));
+	len = ft_strlen(s);
+	dup = (char *)malloc((len + 1) * sizeof(char));
 	if (dup == NULL)
 	{
 		free(dup);
 		return (NULL);
 	}
-	ft_memcpy(dup, s, ft_strlen(s) + 1);
+	if (s == NULL || len == 0)
+	{
+		dup[0] = '\0';
+		return (dup);
+	}	
+	ft_memcpy(dup, s, len + 1);
 	return (dup);
 }
 
