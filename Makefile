@@ -200,4 +200,8 @@ fclean: clean
 	@$(RM) $(NAME)
 	@echo "$(R)[LIBFT] Library .a file removed$(DEF_COLOR)"
 
+debug: CFLAGS += -g3
+#debug: CFLAGS += -w
+debug: all
+
 re: fclean all
