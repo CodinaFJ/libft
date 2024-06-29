@@ -45,8 +45,8 @@ enum e_capital_letters
 	}	t_bool;
 #endif // !_E_BOOL
 
-# ifndef TYPE_RC
-#  define TYPE_RC
+# ifndef T_RC
+#  define T_RC
 typedef enum e_rc
 {
 	RC_OK,
