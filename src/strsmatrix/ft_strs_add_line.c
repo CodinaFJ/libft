@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strs_add_line.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jcodina- <jcodina-@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: jcodina- <jcodina-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/31 13:39:34 by jcodina-          #+#    #+#             */
-/*   Updated: 2024/01/26 17:29:20 by jcodina-         ###   ########.fr       */
+/*   Updated: 2024/07/11 21:53:13 by jcodina-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@ char	*ft_strs_add_line(const char *str, char **strs)
 
 	i = ft_strs_rows((const char **) strs);
 	strs[i] = ft_strdup(str);
+	if (strs[i] = NULL)
+		return (NULL);
 	strs[i + 1] = NULL;
 	return (strs[i]);
 }

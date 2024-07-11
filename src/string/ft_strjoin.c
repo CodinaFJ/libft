@@ -42,17 +42,17 @@ char	*ft_strjoin(char const *s1, char const *s2)
  * is copied. Frees strings given as args
  * @param s1 string 1.
  * @param s2 string 2.
- * @param frees 1 free s1. 2 free s2. 3 free both. Other no free
+ * @param p  Select which param(s) to free
  * @return Allocated string. NULL if allocation fails.
  */
-char	*ft_strjoin_free(char *s1, char *s2, unsigned int frees)
+char	*ft_strjoin_free(char *s1, char *s2, enum e_param_selector p)
 {
 	char	*str;
 	
 	str = ft_strjoin(s1, s2);
-	if (s1 && (frees == 1 || frees == 3))
+	if (s1 && (p == FIRST || p == BOTH))
 		free(s1);
-	if (s2 && (frees == 2 || frees == 3))
+	if (s2 && (p == SECOND || p == BOTH))
 		free(s2);
 	return (str);
 }
