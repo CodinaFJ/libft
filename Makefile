@@ -76,6 +76,7 @@ LIST_FILES =	ft_lstadd_back_bonus	\
 				ft_lst_remove_at		\
 				ft_lst_removeall		\
 				ft_lst_dup				\
+				ft_lst_sort				\
 
 
 MATH_FILES =	ft_maxmin	\

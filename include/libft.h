@@ -108,6 +108,8 @@ void			*ft_lst_remove_at(t_list **lst, int index);
 void			ft_lst_remove_all(t_list **lst, void *content,
 					int (*compare)(void *, void *), void (*del)(void *));
 t_list			*ft_lst_dup(t_list *lst_src, void *(*dup)(void *));
+t_list			*ft_lst_sort(t_list *lst_src, int(cmp)(void *, void *));
+t_bool			ft_lst_is_sorted(t_list *lst, int(cmp)(void *, void *));
 
 /*									MATH									*/
 
