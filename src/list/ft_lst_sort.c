@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lst_dup.c			                              :+:      :+:    :+:   */
+/*   ft_lst_dup.c				                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jcodina- <fjavier.codina@gmail.com>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -40,19 +40,21 @@ t_list	*ft_lst_sort(t_list *lst_src, int(cmp)(void *, void *))
 	t_list	*node_curr;
 	t_list	*node_aux;
 
-	node_curr = lst_src->next;
-	node_prev = lst_src;
-	while (node_curr != NULL)
+	node_curr = lst_src;
+	node_prev = NULL;
+	while (node_curr != NULL && node_curr->next != NULL)
 	{
-		if (cmp(node_curr->content, node_prev->content) > 0)
+		if (cmp(node_curr->content, node_curr->next->content) > 0)
 		{
-			if (node_prev == lst_src)
-				lst_src = node_curr;
 			node_aux = node_curr->next;
-			node_curr->next = node_prev;
-			node_prev->next = node_aux->next;
-			node_curr = lst_src->next;
-			node_prev = lst_src;
+			if (node_prev != NULL)
+				node_prev->next = node_curr->next;
+			else
+				lst_src = node_curr->next;
+			node_curr->next = node_curr->next->next; 
+			node_aux->next = node_curr;
+			node_curr = lst_src;
+			node_prev = NULL;
 			continue ;
 		}
 		node_prev = node_curr;
